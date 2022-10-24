@@ -6,11 +6,11 @@ import { Link } from "react-router-dom"
 export default function Login(){
     return (
         <Home>
-            <Form>
+            <Formulario>
                 <input type="email" placeholder="email" required/>
                 <input type="senha" placeholder="senha" required/>
                 <button type="enviar">Entrar</button>
-            </Form>
+            </Formulario>
             <Link to="/cadastro">
                 <h3>Não tem uma conta? Cadastre-se!</h3>
             </Link>
@@ -28,7 +28,7 @@ const Home = styled.div`
 
 
 `
-const Form = styled.form`
+const Formulario = styled.form`
     display: flex;
     flex-direction: column;
     margin-top: 40px;
